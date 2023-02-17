@@ -17,14 +17,13 @@ import com.Infosys.in.Sample.of.Messaging.Service.UserService;
 @RestController
 public class DepartmentController {
 	
-		
 	
 	@Autowired
 	private DepartmentService departmentService;
 	@Autowired
 	private UserService userService;
 	
-	@PostMapping("/departments")
+	@PostMapping(value="/departments",produces="{application/json}")
 	public Department saveDepartment(@RequestBody Department department) {
 		return departmentService.saveDepartment(department);
 	}
