@@ -24,7 +24,7 @@ public class AddMore {
 	private String userAddress;
 	private String userCode;
 //	@DateTimeFormat(pattern="yyyy-mm-dd")
-	
+	private String addition;
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="user_dep_id")
 	private Department department;
