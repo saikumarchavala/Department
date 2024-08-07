@@ -16,6 +16,13 @@ public class DepartmentServiceImpl implements DepartmentService{
 	@Override
 	public Department saveDepartment(Department department) {
 		// TODO Auto-generated method stub
+		
+		department.setDepartmentName(department.getDepartmentName());
+		department.setDepartmentId(department.getDepartmentId());
+		department.setDepartmentAddress(department.getDepartmentAddress());
+		department.setDepartmentCode(department.getDepartmentCode());
+		department.setDate(department.getDate());
+		
 		return departmentRepository.save(department);
 	}
 

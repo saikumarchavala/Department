@@ -16,6 +16,10 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User saveUser(User user) {
 		// TODO Auto-generated method stub
+		user.setUserName(user.getUserName());
+		user.setUserId(user.getUserId());
+		user.setUserAddress(user.getUserAddress());
+		user.setUserCode(user.getUserCode());
 		return userRepository.save(user);
 	}
 
