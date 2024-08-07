@@ -29,6 +29,8 @@ public class Department {
 	private String departmentCode;
 	private String departmentFirstName;
 	private String lastName;
+	private String hi;
+	private String hello;
 
 	@OneToMany(cascade= CascadeType.ALL)
 	@JoinColumn(name="user_dep_id",referencedColumnName="departmentId")
