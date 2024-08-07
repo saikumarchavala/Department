@@ -25,6 +25,7 @@ public class AddMore {
 	private String userCode;
 	private String firstName;
 	private String lastName;
+	
 //	@DateTimeFormat(pattern="yyyy-mm-dd")
 	
 	@ManyToOne(cascade=CascadeType.ALL)
