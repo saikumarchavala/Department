@@ -20,6 +20,7 @@ public class DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
 	
+//	@Authorized
 	@PostMapping( value="/departments")
 	public Department saveDepartment(@RequestBody Department department) {
 		Date date=department.getDate();
